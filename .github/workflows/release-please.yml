@@ -23,8 +23,9 @@ jobs:
         run: |
           echo "releases_created: ${{ steps.release.outputs.releases_created }}"
           echo "release_created: ${{ steps.release.outputs.release_created }}"
-          echo "pr: ${{ steps.release.outputs.pr }}"
           echo "prs_created: ${{ steps.release.outputs.prs_created }}"
+          echo "pr:"
+          echo '${{ steps.release.outputs.pr }}' | jq '.' || echo '${{ steps.release.outputs.pr }}'
 
       - name: Checkout
         uses: actions/checkout@v5
