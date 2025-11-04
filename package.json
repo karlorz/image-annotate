@@ -1,0 +1,101 @@
+{
+  "name": "@karlorz/image-annotate",
+  "private": false,
+  "version": "0.1.0",
+  "description": "A React component library for image annotation with support for bounding boxes, polygons, and points",
+  "author": "karlorz <karlorz@example.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karlorz/image-annotate"
+  },
+  "homepage": "https://github.com/karlorz/image-annotate#readme",
+  "bugs": {
+    "url": "https://github.com/karlorz/image-annotate/issues"
+  },
+  "keywords": [
+    "react",
+    "image-annotation",
+    "bounding-box",
+    "polygon",
+    "annotation",
+    "component-library",
+    "typescript",
+    "vite"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "./dist/image-annotate.umd.js",
+  "module": "./dist/image-annotate.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/image-annotate.es.js",
+      "require": "./dist/image-annotate.umd.js"
+    },
+    "./styles.css": "./dist/image-annotate.css"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build",
+    "build:lib": "tsc && vite build",
+    "lint": "npx @biomejs/biome lint --write ./src",
+    "format": "npx @biomejs/biome check --write --organize-imports-enabled=true ./src",
+    "test": "vitest",
+    "test:cov": "vitest run --coverage",
+    "prepublishOnly": "npm run test:cov && npm run build:lib",
+    "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\""
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.28.5",
+    "@biomejs/biome": "2.3.3",
+    "@storybook/addon-docs": "10.0.3",
+    "@storybook/addon-links": "10.0.3",
+    "@storybook/addon-themes": "10.0.3",
+    "@storybook/react-vite": "10.0.3",
+    "@storybook/test": "8.6.14",
+    "@tailwindcss/postcss": "4.1.16",
+    "@tailwindcss/vite": "4.1.16",
+    "@testing-library/react": "16.3.0",
+    "@types/node": "24.10.0",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "@vitejs/plugin-react": "5.1.0",
+    "@vitest/coverage-v8": "4.0.6",
+    "autoprefixer": "10.4.21",
+    "babel-loader": "10.0.0",
+    "husky": "9.1.7",
+    "jsdom": "27.1.0",
+    "json": "11.0.0",
+    "lint-staged": "16.2.6",
+    "postcss": "8.5.6",
+    "prop-types": "15.8.1",
+    "storybook": "10.0.3",
+    "tailwindcss": "4.1.16",
+    "typescript": "5.9.3",
+    "vite": "7.1.12",
+    "vite-plugin-dts": "4.5.4",
+    "vitest": "4.0.6"
+  },
+  "files": [
+    "dist"
+  ],
+  "lint-staged": {
+    "*.{js,ts,cjs,mjs,d.cts,d.mts,json,jsonc}": [
+      "biome check --files-ignore-unknown=true",
+      "biome check --write --no-errors-on-unmatched",
+      "biome lint --write --no-errors-on-unmatched --files-ignore-unknown=true",
+      "biome format --write --no-errors-on-unmatched"
+    ]
+  }
+}
