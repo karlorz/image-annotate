@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.4](https://github.com/karlorz/image-annotate/compare/v1.3.3...v1.3.4) (2025-11-04)
+
+
+### Bug Fixes
+
+* bump version ([9273084](https://github.com/karlorz/image-annotate/commit/92730840301b031c2d6c03bea8eab4473b8a4294))
+
 ## [1.3.3](https://github.com/karlorz/image-annotate/compare/v1.3.2...v1.3.3) (2025-11-04)
 
 
