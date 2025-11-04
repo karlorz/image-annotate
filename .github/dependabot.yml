@@ -1,0 +1,60 @@
+# Dependabot configuration file
+# Documentation: https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  # JavaScript/TypeScript dependencies
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "04:00"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "karlorz"
+    labels:
+      - "dependencies"
+      - "npm"
+    commit-message:
+      prefix: "chore"
+      prefix-development: "chore"
+      include: "scope"
+    groups:
+      # Group all Storybook updates together
+      storybook:
+        patterns:
+          - "@storybook/*"
+          - "storybook"
+      # Group all Tailwind CSS updates together
+      tailwindcss:
+        patterns:
+          - "@tailwindcss/*"
+          - "tailwindcss"
+      # Group all testing library updates together
+      testing:
+        patterns:
+          - "@testing-library/*"
+          - "vitest"
+          - "@vitest/*"
+      # Group all TypeScript type definitions
+      types:
+        patterns:
+          - "@types/*"
+
+  # GitHub Actions dependencies
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      day: "monday"
+      time: "04:00"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "karlorz"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
