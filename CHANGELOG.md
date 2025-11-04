@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2](https://github.com/karlorz/image-annotate/compare/v1.0.1...v1.0.2) (2025-11-04)
+
+
+### Bug Fixes
+
+* skip npm-blocked version 1.0.1, trigger release to 1.0.2 ([486a9fe](https://github.com/karlorz/image-annotate/commit/486a9fe3522176197d5874135617002f60b9165b))
+
 ## [1.0.1](https://github.com/karlorz/image-annotate/compare/v1.0.0...v1.0.1) (2025-11-04)
 
 
