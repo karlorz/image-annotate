@@ -11,6 +11,7 @@
       "bump-patch-for-minor-pre-major": true,
       "initial-version": "0.0.1",
       "package-name": "@karlorz/image-annotate",
+      "include-component-in-tag": false,
       "changelog-sections": [
         {"type": "feat", "section": "Features"},
         {"type": "fix", "section": "Bug Fixes"},
