@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0](https://github.com/karlorz/image-annotate/compare/v1.0.0...v1.1.0) (2025-11-04)
+
+
+### Features
+
+* add Dependabot auto-merge workflow ([258992e](https://github.com/karlorz/image-annotate/commit/258992ef1a23103649f460d6300ab2bb73cf2ccc))
+
 ## 1.0.0 (2025-11-04)
 
 
