@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.1](https://github.com/karlorz/image-annotate/compare/v1.3.0...v1.3.1) (2025-11-04)
+
+
+### Bug Fixes
+
+* add npm version check and debug logging to release workflow ([12236b0](https://github.com/karlorz/image-annotate/commit/12236b01533e6c0d5e7afdd10f5c6c150d86f9f9))
+* add npm version check and debug logging to release workflow ([5ac1590](https://github.com/karlorz/image-annotate/commit/5ac1590cb78a5e3acebc72a69bca1a83aeda93cf))
+
 ## [1.3.0](https://github.com/karlorz/image-annotate/compare/v1.2.0...v1.3.0) (2025-11-04)
 
 
