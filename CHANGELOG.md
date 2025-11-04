@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.5](https://github.com/karlorz/image-annotate/compare/v1.3.4...v1.3.5) (2025-11-04)
+
+
+### Bug Fixes
+
+* bump version ([8117288](https://github.com/karlorz/image-annotate/commit/8117288660feea81028bc874dd670a59987e9965))
+* bump version ([f6f35d7](https://github.com/karlorz/image-annotate/commit/f6f35d776dc27cb6e355a949ca9a747e78282a8f))
+* use PAT token to allow CI workflows to run on release-please PRs ([6a91c97](https://github.com/karlorz/image-annotate/commit/6a91c9733e7e15a8f46b268de068f293d727eeb0))
+* use PAT token to allow CI workflows to run on release-please PRs ([9a66ebf](https://github.com/karlorz/image-annotate/commit/9a66ebfd934208d3242c62dd79854e12a6befdef))
+
 ## [1.3.4](https://github.com/karlorz/image-annotate/compare/v1.3.3...v1.3.4) (2025-11-04)
 
 
