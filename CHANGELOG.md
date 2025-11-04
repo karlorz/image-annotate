@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.0 (2025-11-04)
+
+
+### Features
+
+* initial release of image annotation library ([3706ae9](https://github.com/karlorz/image-annotate/commit/3706ae912890112a92652cdb58ee2628531e912b))
+
 ## [0.1.0](https://github.com/karlorz/image-annotate/compare/v0.0.2...v0.1.0) (2025-11-04)
 
 
