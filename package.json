@@ -1,7 +1,7 @@
 {
   "name": "@karlorz/image-annotate",
   "private": false,
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "A React component library for image annotation with support for bounding boxes, polygons, and points",
   "author": "karlorz <karlorz@example.com>",
   "license": "Apache-2.0",
