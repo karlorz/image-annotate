@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0](https://github.com/karlorz/image-annotate/compare/image-annotate-v1.1.0...image-annotate-v1.2.0) (2025-11-04)
+
+
+### Features
+
+* add Dependabot auto-merge workflow ([258992e](https://github.com/karlorz/image-annotate/commit/258992ef1a23103649f460d6300ab2bb73cf2ccc))
+* initial release of image annotation library ([3706ae9](https://github.com/karlorz/image-annotate/commit/3706ae912890112a92652cdb58ee2628531e912b))
+
+
+### Bug Fixes
+
+* configure release-please to handle dependency updates gracefully ([859edf3](https://github.com/karlorz/image-annotate/commit/859edf3cde09f3cabb7d179180cb3306b60db349))
+
 ## [1.1.0](https://github.com/karlorz/image-annotate/compare/v1.0.0...v1.1.0) (2025-11-04)
 
 
