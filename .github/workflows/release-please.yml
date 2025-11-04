@@ -19,6 +19,13 @@ jobs:
         uses: googleapis/release-please-action@v4
         # Config file (.release-please-manifest.json) takes precedence
 
+      - name: Debug release outputs
+        run: |
+          echo "releases_created: ${{ steps.release.outputs.releases_created }}"
+          echo "release_created: ${{ steps.release.outputs.release_created }}"
+          echo "pr: ${{ steps.release.outputs.pr }}"
+          echo "prs_created: ${{ steps.release.outputs.prs_created }}"
+
       - name: Checkout
         uses: actions/checkout@v5
         if: ${{ steps.release.outputs.releases_created }}
@@ -53,9 +60,18 @@ jobs:
           echo "Release tag: ${{ steps.release.outputs.tag_name }}"
           echo "Release name: ${{ steps.release.outputs.release_name }}"
 
+      - name: Check if version already exists on npm
+        if: ${{ steps.release.outputs.releases_created }}
+        run: |
+          PACKAGE_VERSION=$(node -p "require('./package.json').version")
+          if npm view @karlorz/image-annotate@$PACKAGE_VERSION version 2>/dev/null; then
+            echo "::error::Version $PACKAGE_VERSION already exists on npm!"
+            exit 1
+          fi
+          echo "Version $PACKAGE_VERSION does not exist on npm. Safe to publish."
+
       - name: Publish to npm
         run: npm publish
         if: ${{ steps.release.outputs.releases_created }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        continue-on-error: false
