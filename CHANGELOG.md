@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.3](https://github.com/karlorz/image-annotate/compare/v1.3.2...v1.3.3) (2025-11-04)
+
+
+### Bug Fixes
+
+* bump version ([61aad55](https://github.com/karlorz/image-annotate/commit/61aad55fe2fb5633fda0ded76bffd52058726250))
+* escape JSON output in debug step to prevent bash syntax errors ([7b70326](https://github.com/karlorz/image-annotate/commit/7b70326027334b1d35c7c25b5f573a90901b488b))
+
 ## [1.3.2](https://github.com/karlorz/image-annotate/compare/v1.3.1...v1.3.2) (2025-11-04)
 
 
