@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0](https://github.com/karlorz/image-annotate/compare/v1.2.0...v1.3.0) (2025-11-04)
+
+
+### Features
+
+* add Dependabot auto-merge workflow ([258992e](https://github.com/karlorz/image-annotate/commit/258992ef1a23103649f460d6300ab2bb73cf2ccc))
+* initial release of image annotation library ([3706ae9](https://github.com/karlorz/image-annotate/commit/3706ae912890112a92652cdb58ee2628531e912b))
+
+
+### Bug Fixes
+
+* .github/workflows/release-please.yml ([8eacbd1](https://github.com/karlorz/image-annotate/commit/8eacbd1d3e900fe041b16204c5eedf03f328c1f2))
+* configure release-please to handle dependency updates gracefully ([859edf3](https://github.com/karlorz/image-annotate/commit/859edf3cde09f3cabb7d179180cb3306b60db349))
+* improve release-please workflow reliability ([fef6453](https://github.com/karlorz/image-annotate/commit/fef6453e55d37702dbcf8dee8f5558bba375056a))
+* use simple tag format (v1.x.x) instead of component-prefixed tags ([f561484](https://github.com/karlorz/image-annotate/commit/f5614841fd28572eb26dec5d8a3d35f1022c457f))
+
 ## [1.2.0](https://github.com/karlorz/image-annotate/compare/image-annotate-v1.1.0...image-annotate-v1.2.0) (2025-11-04)
 
 
