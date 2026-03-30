@@ -58,7 +58,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.29.0",
-    "@biomejs/biome": "2.4.8",
+    "@biomejs/biome": "2.4.9",
     "@storybook/addon-docs": "10.3.3",
     "@storybook/addon-links": "10.3.3",
     "@storybook/addon-themes": "10.3.3",
