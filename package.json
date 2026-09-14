@@ -57,7 +57,7 @@
     "react-dom": "^19.2.8"
   },
   "devDependencies": {
-    "@babel/core": "8.0.1",
+    "@babel/core": "8.0.5",
     "@biomejs/biome": "2.5.8",
     "@storybook/addon-docs": "10.5.8",
     "@storybook/addon-links": "10.5.8",
